@@ -10,6 +10,14 @@ An AI agent trained with the NeuroEvolution of Augmenting Topologies (NEAT) algo
 
 Best fitness over generations
 
+## Environment
+
+The Gym Super Mario Bros environment was used to provide the game interface and training environment for the agent. Documentation can be found [here](https://pypi.org/project/gym-super-mario-bros/)
+
 ## NEAT implementation
 
 ### Requirements
+
+
+
+work in progress
