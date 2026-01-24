@@ -24,12 +24,6 @@ pip install gym-super-mario-bros
 ```
 gym_super_mario_bros -e 'SuperMarioBrosRandomStages-v0' -m 'human' --stages '1-4'
 ```
-#### Controls
-wasd to move
-o to jump 
-p to run
-return to pause
-exit to exit
 
 ## NEAT implementation
 
