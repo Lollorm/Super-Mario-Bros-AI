@@ -31,7 +31,7 @@ def eval_genome(genome, config):
     max_y = 0
     done = False
 
-    net = neat.nn.FeedForwardNetwork.create(genome, config) # When I started training I forgot to change this, nonetheless it still worked
+    net = neat.nn.FeedForwardNetwork.create(genome, config)
 
     while not done:
         state_flat = np.array(state).flatten() / 255.0 # normalise pixel values
@@ -118,4 +118,5 @@ if __name__ == '__main__':
         print("Please ensure 'config.ini' exists in the same directory as this script")
     else:
         run(config_path)
+
 
