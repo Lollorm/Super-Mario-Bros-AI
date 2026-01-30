@@ -48,5 +48,5 @@ work in progress
 
 ### About DDQN
 
-![paper](https://arxiv.org/pdf/1509.06461)
+[paper](https://arxiv.org/pdf/1509.06461)
 
