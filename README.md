@@ -43,6 +43,10 @@ pip install gym==0.25.1 gym-super-mario-bros==7.4.0 nes-py==8.2.1 neat-python==1
 When working with genetic algorithms, it all really comes down to defining a fitness function that accurately evaluates how well individuals perform a given task.  
 In particular, if we want to train an AI agent to, let's say, clear level 1-1 of Super Mario Bros, we should analyze what it really means to be a good player in Super Mario.
 
+![mario_jump](https://github.com/Lollorm/Super-Mario-Bros-AI/blob/main/NEAT%20Neuroevolution%20of%20Augmenting%20Topologies/assets/images/mario_jump.gif)
+
+Here's an example of what a poorly defined fitness function can lead to.
+
 work in progress
 
 ## DDQN implementation
