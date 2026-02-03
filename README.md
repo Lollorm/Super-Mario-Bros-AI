@@ -11,19 +11,7 @@ An AI agent trained with the NeuroEvolution of Augmenting Topologies (NEAT) algo
 
 Best fitness over generations
 
-## Environment
 
-The Gym Super Mario Bros environment was used to provide the game interface and training environment for the agent. Documentation can be found [here](https://pypi.org/project/gym-super-mario-bros/).
-
-```
-pip install gym-super-mario-bros
-```
-
-### To play manually:
-
-```
-gym_super_mario_bros -e 'SuperMarioBrosRandomStages-v0' -m 'human' --stages '1-4'
-```
 
 ## NEAT implementation
 
@@ -32,12 +20,26 @@ gym_super_mario_bros -e 'SuperMarioBrosRandomStages-v0' -m 'human' --stages '1-4
 NEAT (NeuroEvolution of Augmenting Topologies) is an evolutionary algorithm used to evolve artificial neural networks. It gradually optimizes both network structure and weights through evolutionary processes. A full description of the algorithm is available in the original [paper](https://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf).  
 In this project, NEAT is implemented using the NEAT-Python library. The official documentation can be found [here](https://neat-python.readthedocs.io/en/latest/).
 
+### Environment
 
-### Requirements
+The Gym Super Mario Bros environment was used to provide the game interface and training environment for the agent. Documentation can be found [here](https://pypi.org/project/gym-super-mario-bros/).
+
+```
+pip install gym-super-mario-bros
+```
+
+#### To play manually:
+
+```
+gym_super_mario_bros -e 'SuperMarioBrosRandomStages-v0' -m 'human' --stages '1-4'
+```
+
+#### Requirements
 
 ```
 pip install gym==0.25.1 gym-super-mario-bros==7.4.0 nes-py==8.2.1 neat-python==1.1.0 numpy==1.26.4 opencv-python==4.12.0.88
 ```
+
 ### Defining a Fitness Function
 
 When working with genetic algorithms, it all really comes down to defining a fitness function that accurately evaluates how well individuals perform a given task.  
@@ -56,4 +58,9 @@ work in progress
 ### About DDQN
 
 [paper](https://arxiv.org/pdf/1509.06461)
+
+### Environment
+
+This time I used OpenAI's [Gym Retro](https://openai.com/index/gym-retro/) because it supports custom levels and allows direct access to RAM values, making it possible to inspect memory locations during gameplay.
+
 
