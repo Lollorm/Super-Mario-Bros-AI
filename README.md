@@ -66,7 +66,7 @@ Let $t = 1, \dots, T$ denote timesteps until termination. The total fitness $F$ 
 ```math
 F = \max \Bigg(
 0.1,\;
-\sum_{t=1}^{T} \Big( r_t + 0.01 + 0.1 \,(x_t - x_{t-1}) + 0.1 \,\mathbf{1}_{y_t > y_{t-1}} \Big)
+\sum_{t=1}^{T} \Big( r_t + 0.01 + 0.1 \,(x_t - x_{t-1}) + 0.1 \,\mathbf{}_{y_t > y_{t-1}} \Big)
 + \max_t(x_t)
 + R_{\text{term}}
 \Bigg)
