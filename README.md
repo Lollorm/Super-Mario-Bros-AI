@@ -61,6 +61,8 @@ Here's an example of what a poorly defined fitness function can lead to.
 
 In this implementation, the fitness function evaluates Mario’s speed and position along the x-axis. Penalties are applied if Mario gets stuck or dies. In addition, a small reward is given for jumping, to encourage the evolution of individuals who jump obstacles and advance further.
 
+---
+
 ### Fitness Function
 Let $t = 1, \dots, T$ denote timesteps until termination. The total fitness $F$ of an individual is defined as:
 ```math
@@ -84,7 +86,7 @@ R_{\text{term}} =
 
 - $r_t$ is the environment reward from *gym\_super\_mario\_bros*  
 - $x_t, y_t$ are Mario's horizontal and vertical positions at timestep $t$  
-- $\mathbf{}{y_t > y_{t-1}}$ is an indicator function equal to 1 if Mario moved upward, 0 otherwise  
+- $\mathbf{}{y_t > y_{t-1}}$ is an indicator function of whether Mario is jumping or not  
 - "stuck" is defined as no forward progress for more than 250 consecutive timesteps  
 
 ---
