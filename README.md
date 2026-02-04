@@ -61,14 +61,36 @@ Here's an example of what a poorly defined fitness function can lead to.
 
 In this implementation, the fitness function evaluates Mario’s speed and position along the x-axis. Penalties are applied if Mario gets stuck or dies. In addition, a small reward is given for jumping, to encourage the evolution of individuals who jump obstacles and advance further.
 
-$
+### Fitness Function
+Let $t = 1, \dots, T$ denote timesteps until termination. The total fitness $F$ of an individual is defined as:
+```math
 F = \max \Bigg(
 0.1,\;
 \sum_{t=1}^{T} \Big( r_t + 0.01 + 0.1 \,(x_t - x_{t-1}) + 0.1 \,\mathbf{1}_{y_t > y_{t-1}} \Big)
 + \max_t(x_t)
 + R_{\text{term}}
 \Bigg)
-$
+```
+
+where the terminal reward $R_{\text{term}}$ is:
+```math
+R_{\text{term}} =
+\begin{cases}
++10{,}000 & \text{if the flag is reached} \\
+-150 & \text{if the agent dies before reaching the flag} \\
+-100 & \text{if the agent becomes stuck}
+\end{cases}
+```
+
+- $r_t$ is the environment reward from *gym\_super\_mario\_bros*  
+- $x_t, y_t$ are Mario's horizontal and vertical positions at timestep $t$  
+- $\mathbf{1}_{y_t > y_{t-1}}$ is an indicator function equal to 1 if Mario moved upward, 0 otherwise  
+- "stuck" is defined as no forward progress for more than 250 consecutive timesteps  
+
+---
+
+### Plain-English Summary
+The fitness function rewards forward progress, survival, and upward movement, while penalizing death and stagnation. Agents are encouraged to move to the right, jump over obstacles, and complete the level as quickly as possible, with a large bonus for reaching the flag.
 
 work in progress
 
