@@ -62,7 +62,7 @@ In particular, if we want to train an AI agent to, let's say, clear level 1-1 of
 
 ![mario_jump](https://github.com/Lollorm/Super-Mario-Bros-AI/blob/main/NEAT%20Neuroevolution%20of%20Augmenting%20Topologies/assets/images/mario_jump.gif)
 
-Here's an example of what a poorly defined fitness function can lead to.
+Here's an example of what a poorly defined fitness function can lead to (in this case jumping was rewarded too much).
 
 In this implementation, the fitness function evaluates Mario’s speed and position along the x-axis. Penalties are applied if Mario gets stuck or dies. In addition, a small reward is given for jumping, to encourage the evolution of individuals who jump obstacles and advance further.
 
