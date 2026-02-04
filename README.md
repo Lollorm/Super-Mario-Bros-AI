@@ -84,13 +84,11 @@ R_{\text{term}} =
 
 - $r_t$ is the environment reward from *gym\_super\_mario\_bros*  
 - $x_t, y_t$ are Mario's horizontal and vertical positions at timestep $t$  
-- $\mathbf{1}_{y_t > y_{t-1}}$ is an indicator function equal to 1 if Mario moved upward, 0 otherwise  
+- $\mathbf{}{y_t > y_{t-1}}$ is an indicator function equal to 1 if Mario moved upward, 0 otherwise  
 - "stuck" is defined as no forward progress for more than 250 consecutive timesteps  
 
 ---
 
-### Plain-English Summary
-The fitness function rewards forward progress, survival, and upward movement, while penalizing death and stagnation. Agents are encouraged to move to the right, jump over obstacles, and complete the level as quickly as possible, with a large bonus for reaching the flag.
 
 work in progress
 
