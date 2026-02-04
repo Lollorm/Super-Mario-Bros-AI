@@ -11,7 +11,7 @@ An AI agent trained with the NeuroEvolution of Augmenting Topologies (NEAT) algo
 
 ![Best fitness over generations](https://github.com/Lollorm/Super-Mario-Bros-AI/blob/main/NEAT%20Neuroevolution%20of%20Augmenting%20Topologies/First%20agent%20that%20managed%20to%20beat%201-1/fitness_progress_0_to_350.png)
 
-Best fitness over generations
+Best fitness over generations of the previous agent (The best individual of generation 352 managed to beat the level).
 
 ---
 
@@ -94,7 +94,8 @@ R_{\text{term}} =
 - $r_t$ is the environment reward from *gym\_super\_mario\_bros*  
 - $x_t, y_t$ are Mario's horizontal and vertical positions at timestep $t$  
 - $\mathbf{}{y_t > y_{t-1}}$ is an indicator function of whether Mario is jumping or not  
-- "stuck" is defined as no forward progress for more than 250 consecutive timesteps  
+- "stuck" is defined as no forward progress for more than 250 consecutive timesteps
+- such a huge reward for reaching the flagpole is useful to understand in which generation the agent managed to beat the level
 
 ---
 
