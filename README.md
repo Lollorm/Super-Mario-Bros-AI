@@ -11,7 +11,7 @@ An AI agent trained with the NeuroEvolution of Augmenting Topologies (NEAT) algo
 
 Best fitness over generations
 
-
+---
 
 ## NEAT implementation
 
@@ -19,6 +19,8 @@ Best fitness over generations
 
 NEAT (NeuroEvolution of Augmenting Topologies) is an evolutionary algorithm used to evolve artificial neural networks. It gradually optimizes both network structure and weights through evolutionary processes. A full description of the algorithm is available in the original [paper](https://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf).  
 In this project, NEAT is implemented using the NEAT-Python library. The official documentation can be found [here](https://neat-python.readthedocs.io/en/latest/).
+
+---
 
 ### Environment
 
@@ -40,6 +42,8 @@ gym_super_mario_bros -e 'SuperMarioBrosRandomStages-v0' -m 'human' --stages '1-4
 pip install gym==0.25.1 gym-super-mario-bros==7.4.0 nes-py==8.2.1 neat-python==1.1.0 numpy==1.26.4 opencv-python==4.12.0.88
 ```
 
+---
+
 ### Defining an input
 
 To select the optimal action, the neural network is fed the current environment observation at each timestep. In this implementation, the agent captures a screenshot of the current frame, converts it to grayscale, normalizes pixel values to the range [0,1], and reduces the image to a fixed-size representation of 1024 inputs. The network is configured as recurrent, so temporal information is handled through the network’s internal state rather than explicit frame stacking. As a result, no frame stacking is used. In this particular case, experiments with frame stacking using a similar number of inputs proved ineffective.
@@ -49,6 +53,7 @@ To select the optimal action, the neural network is fed the current environment 
 
 The input image and its magnified version side by side.
 
+---
 
 ### Defining a Fitness Function
 
