@@ -106,8 +106,7 @@ work in progress
 
 ### WIP
 
-![inverted pendulum](https://github.com/Lollorm/Super-Mario-Bros-AI/blob/main/DDQN/assets/images/cartpole_qlearning-episode-0.gif)
-<img src="https://github.com/Lollorm/Super-Mario-Bros-AI/blob/main/DDQN/assets/images/cartpole_qlearning-episode-0.gif" width="50%" height="50%"/>
+<img src="https://github.com/Lollorm/Super-Mario-Bros-AI/blob/main/DDQN/assets/images/cartpole_qlearning-episode-0.gif" width="30%" height="30%"/>
 
 An agent I made in the past balancing an inverted pendulum (using a Q-table).
 
