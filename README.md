@@ -143,6 +143,4 @@ To do this I had to manually [integrate](https://retro.readthedocs.io/en/latest/
 
 
 
-https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html
-
 
