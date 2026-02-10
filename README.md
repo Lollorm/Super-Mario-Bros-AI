@@ -113,11 +113,17 @@ The code to train the agent can be found in the [`NEAT`](NEAT%20Neuroevolution%2
 
 An agent I made in the past balancing an inverted pendulum (using a Q-table).
 
+---
+
 ### About DDQN
 
 [paper](https://arxiv.org/pdf/1509.06461)
 
+---
+
 ## PPO implementation
+
+---
 
 ### About PPO
 
@@ -128,6 +134,8 @@ Unlike off-policy algorithms such as DDQN, PPO does not use a replay buffer. As 
 This time, I implemented it using stable-baselines3 [library](https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html) and following ClarityCoders's [tutorial](https://youtu.be/PxoG0A2QoFs?si=lWY_leDz14ngZk5S) on PPO.
 
 The original paper can be found [here](https://arxiv.org/pdf/1707.06347v2).
+
+---
 
 ### Environment
 
