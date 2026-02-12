@@ -1,0 +1,32 @@
+{
+  "crop": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "done": {
+    "variables": {
+      "dead": {
+        "op": "equal",
+        "reference": 0
+      }
+    }
+  },
+  "reward": {
+    "variables": {
+      "x": {
+        "reward": 1.0
+      },
+      "score": {
+        "reward": 0.01
+      },
+      "checkpoint": {
+        "op": "delta",
+        "measurement": "nonzero",
+        "reward": 100.0
+      },
+      "level_end": {
+        "reward": 2000.0
+    
+    }}}}
