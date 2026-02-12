@@ -40,9 +40,10 @@
       "address": 8257747,
       "type": "<u4"
     },
-    "yoshiCoins": {
+    "yoshi_coins": {
       "address": 8262690,
       "type": "<u4"
     }
   }
 }
+
