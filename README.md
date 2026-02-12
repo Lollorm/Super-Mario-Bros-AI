@@ -143,6 +143,10 @@ To do this I had to manually [integrate](https://retro.readthedocs.io/en/latest/
 2. Implementing a custom reward function
 3. Adding the necessary JSON configuration files
 
+![Yoshi Island 1](https://github.com/Lollorm/Super-Mario-AI/blob/main/PPO%20Proximal%20Policy%20Optimization/Assets/YoshiIsland1.gif)
+
+The same agent from before beating Yoshi Island 1.
+
 ---
 
 ### Network Architecture
