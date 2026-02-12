@@ -149,6 +149,14 @@ To do this I had to manually [integrate](https://retro.readthedocs.io/en/latest/
 
 ---
 
+### Defining an input
+
+---
+
+### Network Architecture
+
+---
+
 ### Acknowledgments
 
 
