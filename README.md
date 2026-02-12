@@ -145,7 +145,7 @@ You can import the requirements from [this](https://github.com/Lollorm/Super-Mar
 
 This time I used OpenAI's [Gym Retro](https://openai.com/index/gym-retro/) environment because it supports custom levels and allows direct access to RAM values, making it possible to inspect memory locations during gameplay.  
 This time I decided to train the agent on [Super Mario World](https://en.wikipedia.org/wiki/Super_Mario_World) as it offers a more complex action space, in particular I was curious about the possibility of an agent learning trickjumps or glitches (Maybe an Agent could learn [Arbitrary code execution](https://tasvideos.org/ArbitraryCodeExecutionHowTo) given the proper environment).  
-To do this I had to manually [integrate](https://retro.readthedocs.io/en/latest/integration.html) the game in Gym Retro by:
+To do this I had to manually [integrate](https://retro.readthedocs.io/en/latest/integration.html) the game in Gym Retro by:  
 1. Finding the memory addresses of relevant variables (position, lives, score, etc.)
 2. Implementing a custom reward function
 3. Adding the necessary JSON configuration files
