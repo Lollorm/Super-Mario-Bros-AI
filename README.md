@@ -105,22 +105,6 @@ The code to train the agent can be found in the [`NEAT`](NEAT%20Neuroevolution%2
 
 ---
 
-## DDQN implementation
-
-### WIP
-
-<img src="https://github.com/Lollorm/Super-Mario-Bros-AI/blob/main/DDQN/assets/images/cartpole_qlearning-episode-0.gif" width="35%" height="35%"/>
-
-An agent I made in the past balancing an inverted pendulum (using a Q-table).
-
----
-
-### About DDQN
-
-[paper](https://arxiv.org/pdf/1509.06461)
-
----
-
 ## PPO implementation
 
 ### About PPO
@@ -156,6 +140,22 @@ To do this I had to manually [integrate](https://retro.readthedocs.io/en/latest/
 ### Network Architecture
 
 This PPO implementation uses a Convolutional Neural Network (CNN) policy to process visual observations directly from the game screen.
+
+---
+
+## DDQN implementation
+
+### WIP
+
+<img src="https://github.com/Lollorm/Super-Mario-Bros-AI/blob/main/DDQN/assets/images/cartpole_qlearning-episode-0.gif" width="35%" height="35%"/>
+
+An agent I made in the past balancing an inverted pendulum (using a Q-table).
+
+---
+
+### About DDQN
+
+[paper](https://arxiv.org/pdf/1509.06461)
 
 ---
 
