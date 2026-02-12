@@ -145,8 +145,50 @@ To do this I had to manually [integrate](https://retro.readthedocs.io/en/latest/
 
 ![Yoshi Island 1](https://github.com/Lollorm/Super-Mario-AI/blob/main/PPO%20Proximal%20Policy%20Optimization/Assets/YoshiIsland1.gif)
 
-The same agent from before beating Yoshi Island 1.
+The same agent from before beating Yoshi Island 1.  
 
+
+To implement the agent you will have to replace the files (with the same name) in your game directory with [these](https://github.com/Lollorm/Super-Mario-AI/tree/main/PPO%20Proximal%20Policy%20Optimization/JSON) JSON files.  
+
+
+For example in [scenario.json](https://github.com/Lollorm/Super-Mario-AI/blob/main/PPO%20Proximal%20Policy%20Optimization/JSON/scenario.json) you can change tweak these parameters, and add others to influence the reward function, in particular you can choose to feed the neural network only part of the screen by modyfing "crop" (In my case I did not crop the input image). I also decided to end each episode (done) after the player died once, even though Mario starts with 5 lives.
+```
+{
+  "crop": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "done": {
+    "variables": {
+      "dead": {
+        "op": "equal",
+        "reference": 0
+      }
+    }
+  },
+  "reward": {
+    "variables": {
+      "x": {
+        "reward": 1.0
+      },
+      "score": {
+        "reward": 0.01
+      },
+      "checkpoint": {
+        "op": "delta",
+        "measurement": "nonzero",
+        "reward": 100.0
+      },
+      "level_end": {
+        "reward": 2000.0
+    
+     }
+    }
+  }
+}
+```
 ---
 
 ### Network Architecture
