@@ -22,6 +22,10 @@ Best fitness over generations of the previous agent (The best individual of gene
 NEAT (NeuroEvolution of Augmenting Topologies) is an evolutionary algorithm used to evolve artificial neural networks. It gradually optimizes both network structure and weights through evolutionary processes. A full description of the algorithm is available in the original [paper](https://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf).  
 In this project, NEAT is implemented using the NEAT-Python library. The official documentation can be found [here](https://neat-python.readthedocs.io/en/latest/).
 
+![net](https://github.com/Lollorm/Super-Mario-AI/blob/main/NEAT%20Neuroevolution%20of%20Augmenting%20Topologies/First%20agent%20that%20managed%20to%20beat%201-1/mario_net.png)
+
+Here's the topology of the best evolved network from generation 352.
+
 ---
 
 ### Environment
