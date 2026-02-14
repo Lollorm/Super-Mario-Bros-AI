@@ -123,7 +123,7 @@ Unlike off-policy algorithms such as DDQN, PPO does not use a replay buffer. As 
 
 This time, I implemented it using stable-baselines3 [library](https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html) and following ClarityCoders's [tutorial](https://youtu.be/PxoG0A2QoFs?si=lWY_leDz14ngZk5S) on PPO.
 
-The original paper can be found [here](https://arxiv.org/pdf/1707.06347v2).
+If you want to learn more about this algorithm, the original paper that describes it can be found [here](https://arxiv.org/pdf/1707.06347v2).
 
 ---
 
