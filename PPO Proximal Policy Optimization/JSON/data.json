@@ -4,10 +4,6 @@
       "address": 5070,
       "type": "|i1"
     },
-    "coins": {
-      "address": 8261055,
-      "type": "|u1"
-    },
     "level_end": {
       "address": 8259846,
       "type": "|i1"
@@ -24,7 +20,7 @@
       "address": 8261428,
       "type": "<u4"
     },
-    "x": {
+    "mario_x": {
       "address": 148,
       "type": "<u2"
     },
@@ -32,18 +28,11 @@
       "address": 8257688,
       "type": "<u4"
     },
-    "y": {
-      "address": 114,
-      "type": "<u4"
-    },
-    "jump": {
+    "mario_y": {
       "address": 8257747,
-      "type": "<u4"
-    },
-    "yoshi_coins": {
-      "address": 8262690,
       "type": "<u4"
     }
   }
 }
+
 
