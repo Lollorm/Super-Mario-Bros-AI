@@ -195,6 +195,8 @@ For example in [scenario.json](https://github.com/Lollorm/Super-Mario-AI/blob/ma
 ```
 
 <img src="https://github.com/Lollorm/Super-Mario-AI/blob/main/PPO%20Proximal%20Policy%20Optimization/Assets/GameIntegrationGUI.png" width="50%" height="50%"/>
+<img src="https://github.com/Lollorm/Super-Mario-AI/blob/main/PPO%20Proximal%20Policy%20Optimization/Assets/GameIntegrationGUI.png" alt="Description" style="max-width: 100%; height: auto;">
+
 
 Me searching for the memory address for holding a shell.
 
