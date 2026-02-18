@@ -1,5 +1,5 @@
 # Super Mario AI
->This repository explores multiple approaches to training AI agents to play Super Mario Bros and Super Mario World.
+>This repository explores multiple artificial intelligence approaches used to train agents to play Super Mario Bros and Super Mario World.
 
 ---
 
