@@ -2,7 +2,7 @@
 
 ---
 
-# CURRENTLY WIP
+This repository explores multiple AI approaches for playing classic Mario
 
 ![mario1-1](https://github.com/Lollorm/Super-Mario-Bros-AI/blob/main/NEAT%20Neuroevolution%20of%20Augmenting%20Topologies/First%20agent%20that%20managed%20to%20beat%201-1/mario1-1.gif)
 
@@ -12,6 +12,21 @@ An AI agent trained with the NeuroEvolution of Augmenting Topologies (NEAT) algo
 <img src="https://github.com/Lollorm/Super-Mario-Bros-AI/blob/main/NEAT%20Neuroevolution%20of%20Augmenting%20Topologies/First%20agent%20that%20managed%20to%20beat%201-1/fitness_progress_0_to_350.png" width="800"/>
 
 Best fitness over generations of the previous agent (The best individual of generation 352 managed to beat the level).
+
+- [NEAT Implementation](#neat-implementation)
+  - [About NEAT](#about-neat)
+  - [Environment](#environment)
+  - [Requirements](requirements)
+  - [Defining an Input](#defining-an-input)
+  - [Defining a Fitness Function](#defining-a-fitness-function)
+- [PPO Implementation](#ppo-implementation)
+  - [About PPO](#about-ppo)
+  - [Requirements](#requirements)
+  - [Environment](environment)
+  - [Network Architecture](#network-architecture)
+  - [Training on Random Levels](#training-on-random-levels)
+  - [Donut Plains 3](#donut-plains-3)
+- [DDQN Implementation (WIP)](#ddqn-implementation)
 
 ---
 
