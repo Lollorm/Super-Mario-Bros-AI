@@ -22,7 +22,7 @@ Best fitness over generations of the previous agent (The best individual of gene
 - [PPO Implementation](#ppo-implementation)
   - [About PPO](#about-ppo)
   - [Requirements](#requirements)
-  - [Environment](environment)
+  - [Environment](#environment)
   - [Network Architecture](#network-architecture)
   - [Training on Random Levels](#training-on-random-levels)
   - [Donut Plains 3](#donut-plains-3)
